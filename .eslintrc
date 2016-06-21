@@ -7,17 +7,21 @@
       "jsx": true
     }
   },
+
   "env": {
     "browser": true,
     "commonjs": true,
     "es6": true
   },
 
+  "plugins": [
+    "react",
+  ],
+
   "rules": {
     "semi": ["error", "always"],
     "no-var": ["error"],
-    "no-unused-vars": ["error", {
-      "varsIgnorePattern": "[rR]eact"
-    }],
-  }
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+  },
 }

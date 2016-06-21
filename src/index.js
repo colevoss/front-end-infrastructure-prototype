@@ -1,10 +1,9 @@
-const x = 'asdf';
+import React from 'react';
+import { render } from 'react-dom';
 
-class Test {
-  constructor() {
-    console.log('blah');
-  }
-}
+import App from './App';
 
-const y = new Test();
-
+render(
+  <App />,
+  document.getElementById('app')
+);
