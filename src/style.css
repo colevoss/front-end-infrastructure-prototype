@@ -1,0 +1,7 @@
+:global .testSomething {
+  background: blue;
+}
+
+.testName {
+  font-size: 22px;
+}

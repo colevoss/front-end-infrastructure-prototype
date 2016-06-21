@@ -1,0 +1,39 @@
+{
+  "name": "front-end-infrastructure-prototype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/webpack --progress --colors",
+    "build:watch": "npm run build -- --watch",
+    "predev-build:prod": "npm run clean",
+    "build:prod": "NODE_ENV=development npm run build",
+    "prebuild:dev": "npm run clean",
+    "prebuild:dev:watch": "npm run clean",
+    "build:dev": "NODE_ENV=development npm run build",
+    "build:dev:watch": "NODE_ENV=development npm run build:watch"
+  },
+  "author": "Cole Voss",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.12.0",
+    "eslint-loader": "^1.3.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "postcss-loader": "^0.9.1",
+    "postcss-modules": "^0.5.0",
+    "rimraf": "^2.5.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0"
+  }
+}
